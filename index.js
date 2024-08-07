@@ -13,13 +13,13 @@ const mongodb_string = process.env.MONGODB_STRING || "mongodb+srv://gomezjeswel:
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-const corsOptions = {
-  origin: ["https://blog-app-client-blush.vercel.app/", "https://blog-app-client-git-master-jeswels-projects.vercel.app/", "https://blog-app-client-lyf7x08c9-jeswels-projects.vercel.app/"],
-  credentials: true,
-  optionSuccessStatus: 200,
-};
+// const corsOptions = {
+//   origin: ["https://blog-app-client-blush.vercel.app/", "https://blog-app-client-git-master-jeswels-projects.vercel.app/", "https://blog-app-client-lyf7x08c9-jeswels-projects.vercel.app/"],
+//   credentials: true,
+//   optionSuccessStatus: 200,
+// };
 
-app.use(cors(corsOptions));
+app.use(cors());
 
 
 mongoose.connect(mongodb_string)
