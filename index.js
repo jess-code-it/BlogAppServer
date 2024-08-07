@@ -13,7 +13,6 @@ const mongodb_string = process.env.MONGODB_STRING || "mongodb+srv://gomezjeswel:
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
 const corsOptions = {
   origin: ["http://localhost:4000"],
   credentials: true,

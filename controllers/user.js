@@ -2,7 +2,6 @@ const bcrypt = require('bcrypt');
 const User = require("../models/User");
 const auth = require("../auth");
 const { errorHandler } = auth;
-
 // Function to log in a user
 module.exports.loginUser = (req, res) => {
   if (req.body.email.includes("@")) {

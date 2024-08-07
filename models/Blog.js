@@ -15,7 +15,6 @@ const commentSchema = new mongoose.Schema({
     default: Date.now
   }
 });
-
 const blogSchema = new mongoose.Schema({
   title: {
     type: String,

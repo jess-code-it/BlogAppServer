@@ -13,5 +13,4 @@ router.get('/posts/:blogId', verify, blogController.getBlogById);
 router.post('/posts/:blogId/comments', verify, notAdmin, blogController.addComment);
 router.delete('/posts/:blogId/comments/:commentId', verify, blogController.deleteComment);
 router.get('/posts/:blogId/comments', blogController.getComments);
-
 module.exports = router;

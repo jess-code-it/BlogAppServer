@@ -9,7 +9,6 @@ module.exports.createAccessToken = (user) => {
     };
     return jwt.sign(data, process.env.JWT_SECRET_KEY, {});
 };
-
 module.exports.verify = (req, res, next) => {
     let token = req.headers.authorization;
 

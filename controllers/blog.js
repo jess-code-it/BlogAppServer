@@ -16,7 +16,6 @@ module.exports.createBlog = async (req, res) => {
     errorHandler(error, req, res);
   }
 };
-
 // Function to update a Blog
 module.exports.updateBlog = async (req, res) => {
   try {
